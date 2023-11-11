@@ -1,6 +1,6 @@
 
 import parse from 'html-react-parser';
-import'../pages/about/About.css';
+import'../pages/about/about.css';
 const ResumeItem = ({icon,year,title,desc}) => {
   return (
     <div className="resume__item">
