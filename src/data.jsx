@@ -108,8 +108,8 @@ export const personalInfo = [
 
   {
     id: 9,
-    title: 'Skype : ',
-    description: 'steve.milner',
+    title: 'LinkIn : ',
+    description: '',
   },
 
   {
@@ -124,26 +124,26 @@ export const personalInfo = [
  export const stats = [
   {
     id: 1,
-    no: '12+',
-    title: 'Years of <br /> Experience',
+    no: '2+',
+    title: ' studying web <br/> development',
   },
 
   {
     id: 2,
-    no: '97+',
+    no: '10+',
     title: 'Completed <br /> Projects',
   },
 
   {
     id: 3,
-    no: '81+',
-    title: 'Happy <br /> Customers',
+    no: '10+',
+    title: 'different programming <br/> languages.',
   },
 
   {
     id: 4,
-    no: '53+',
-    title: ' Awards <br /> Won',
+    no: 'Skill',
+    title: 'Teamwork',
   },
 ];
 
@@ -209,31 +209,31 @@ export const skills = [
   {
     id: 1,
     title: 'Html',
-    percentage: '40',
+    percentage: '50',
   },
 
   {
     id: 2,
     title: 'Javascript',
-    percentage: '60',
+    percentage: '50',
   },
 
   {
     id: 3,
     title: 'Css',
-    percentage: '60',
+    percentage: '50',
   },
 
   {
     id: 4,
     title: 'Php-Laravel',
-    percentage: '45',
+    percentage: '30',
   },
 
   {
     id: 5,
     title: 'Java',
-    percentage: '55',
+    percentage: '50',
   },
 
   {
@@ -245,7 +245,7 @@ export const skills = [
   {
     id: 7,
     title: 'Angular',
-    percentage: '30',
+    percentage: '25',
   },
 
   {
@@ -259,27 +259,29 @@ export const portfolio = [
   {
     id: 1,
     img: Work1,
-    title: 'Photo Editing',
+    title: 'Ecommerce Boon Padle',
+    web: "https://ecommerce-padel-ifig.vercel.app",
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Photo',
+        desc: 'Web site Boom Padle',
       },
       {
         icon: <FiUser />,
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'Curso React js',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Photoshop',
+        desc: 'React Js , Firebase',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://github.com/LohanaO/EcommercePadel',
+       
       },
     ],
   },
@@ -287,7 +289,8 @@ export const portfolio = [
   {
     id: 2,
     img: Work2,
-    title: 'Website Design',
+    title: 'Website Veterinaria',
+    web:"https://lohana-o-web-vete.netlify.app/",
     details: [
       {
         icon: <FiFileText />,
@@ -297,17 +300,17 @@ export const portfolio = [
       {
         icon: <FiUser />,
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'Curso Udemy',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'React JS',
+        desc: 'React JS, tailwind',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://github.com/LohanaO/VeteWeb',
       },
     ],
   },
@@ -315,27 +318,28 @@ export const portfolio = [
   {
     id: 3,
     img: Work3,
-    title: 'Video Editing',
+    title: 'Planificador de gastos',
+    web:"https://lohana-o-planificador-gastos.netlify.app/",
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Video',
+        desc: 'Panificador de gastos',
       },
       {
         icon: <FiUser />,
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'Curso Udemy',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Premium',
+        desc: 'React js, vite',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://github.com/LohanaO/PlanifiadorGastos',
       },
     ],
   },
@@ -343,27 +347,28 @@ export const portfolio = [
   {
     id: 4,
     img: Work4,
-    title: 'Video Editing',
+    title: 'Conversor de criptomonedas',
+    web:"https://lohana-o-cotizador-cripto.netlify.app/",
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Video',
+        desc: 'Conversor de criptomonedas',
       },
       {
         icon: <FiUser />,
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'Curso Udemy',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Premium',
+        desc: 'React js, vite, styled components, api cryptocompare',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://github.com/LohanaO/CotizadorCripto',
       },
     ],
   },
@@ -371,7 +376,8 @@ export const portfolio = [
   {
     id: 5,
     img: Work5,
-    title: 'Landing Page',
+    title: 'Galeria de Fotos',
+    web:"https://github.com/LohanaO/ProyectoPadel",
     details: [
       {
         title: 'Project : ',
@@ -379,15 +385,15 @@ export const portfolio = [
       },
       {
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'Curso FullStack',
       },
       {
         title: 'Language : ',
-        desc: 'React JS, Node JS',
+        desc: 'Laravel, mySql',
       },
       {
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://github.com/LohanaO/ProyectoPadel',
       },
     ],
   },
