@@ -57,7 +57,7 @@ const About = () => {
       <div className='separator'></div>
       <div className='resume'>
         <h3 className='section__subtitle subtitle__center'>
-        Experience & Education
+        Experiene and Education
         </h3>
 
         <div className='resume__container grid'>

@@ -143,7 +143,7 @@ export const personalInfo = [
   {
     id: 4,
     no: 'Skill',
-    title: 'Teamwork',
+    title: 'Teamwork, Scrum',
   },
 ];
 
@@ -152,57 +152,50 @@ export const personalInfo = [
 export const resume = [
   {
     id: 1,
-    category: 'experience',
-    icon: <FaBriefcase />,
-    year: '2018 - PRESENT',
-    title: 'Web Developer <span> Envato </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,',
+    category: 'education',
+    icon: <FaGraduationCap />,
+    year: '2023 - ONLINE-University of Santiago del Estero- Argentina',
+    title: 'Web Developer Full-Satck <span> Angular- Java </span>',
+    desc: 'ANGULAR: Concepts of HTML, CSS, JavaScript, and TypeScript, Metadata definition with decorator,Template usage, Interpolation, ngIf, ngFor directives, Styling encapsulation in components, Usage of hooks for the lifecycle,  Nested components, Data passing between components, Services and dependency injection,  Basic navigation and routing, Angular modules. JAVA: Principles of object orientation. Object classes. Objects. Inheritance. Genericity and overload. Object-oriented development. The layer model. Development tools aimed at web application servers. Library management. Configuration management. Security and error management. Transactions and persistence. Access to databases. Introduction to REST web services in Java.   '
   },
 
   {
     id: 2,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '2013 - 2018',
-    title: 'UI/UX Designer <span> Themeforest </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+    year: '2023',
+    title: 'Development of different projects using<span> React Js </span>',
+    desc: 'Project development and deployment  using react-creat-app, vite. UseState, useEffect, styled component, react router dom, loader, action, Form, Context, api consumption, fetch to different routes. Using TailWindCss.',
   },
 
   {
     id: 3,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '2005 - 2013',
-    title: 'Consultant <span> Videohive </span>',
-    desc: 'Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur elit, sed do eiusmod tempor duntt',
+    year: '2022-2023',
+    title: 'Proyect Padel<span> Laravel-Mysql </span>',
+    desc: 'Application development using Laravel-mySql framework. Navigation menu. photo carousel, image gallery with crud.',
   },
 
   {
     id: 4,
     category: 'education',
     icon: <FaGraduationCap />,
-    year: '2015',
-    title: 'Engineering Degree <span> Oxford University </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore',
+    year: '2023 - ONLINE',
+    title: 'Reat js Developer <span> CODERHOUSE-ARGENTINA </span>',
+    desc: 'Creation of components, components life cycle, hooks, Firebase, Axios. Material UI, petitions http, API restfull, React router Dom, loader, action, Context, Styled components, Json server.'
   },
 
   {
     id: 5,
     category: 'education',
     icon: <FaGraduationCap />,
-    year: '2012',
-    title: 'Master Degree <span> KIEV University </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+    year: '2022',
+    title: 'Full Stack Developer <span> Digitalmind-UTN-Argentina </span>',
+    desc: 'Frontend: HTML5, CSS3, bootstrap, responsive desing, Programation JavaScript, Backend: Programation PHP, framework Laravel, Database MYsql, Git, GtHub',
   },
 
-  {
-    id: 6,
-    category: 'education',
-    icon: <FaGraduationCap />,
-    year: '2009',
-    title: 'Bachelor Degree <span> Tunis High School </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore',
-  },
+
 ];
 
 export const skills = [
@@ -279,7 +272,7 @@ export const portfolio = [
       },
       {
         icon: <FiExternalLink />,
-        title: 'Preview : ',
+        title: 'Repository : ',
         desc: 'https://github.com/LohanaO/EcommercePadel',
        
       },
@@ -309,7 +302,7 @@ export const portfolio = [
       },
       {
         icon: <FiExternalLink />,
-        title: 'Preview : ',
+        title: 'Repository : ',
         desc: 'https://github.com/LohanaO/VeteWeb',
       },
     ],
@@ -338,7 +331,7 @@ export const portfolio = [
       },
       {
         icon: <FiExternalLink />,
-        title: 'Preview : ',
+        title: 'Repository : ',
         desc: 'https://github.com/LohanaO/PlanifiadorGastos',
       },
     ],
@@ -352,7 +345,7 @@ export const portfolio = [
     details: [
       {
         icon: <FiFileText />,
-        title: 'Project : ',
+        title: 'Project: ',
         desc: 'Conversor de criptomonedas',
       },
       {
@@ -367,7 +360,7 @@ export const portfolio = [
       },
       {
         icon: <FiExternalLink />,
-        title: 'Preview : ',
+        title: 'Repository : ',
         desc: 'https://github.com/LohanaO/CotizadorCripto',
       },
     ],
@@ -376,7 +369,7 @@ export const portfolio = [
   {
     id: 5,
     img: Work5,
-    title: 'Galeria de Fotos',
+    title: 'Proyect Padel',
     web:"https://github.com/LohanaO/ProyectoPadel",
     details: [
       {
@@ -392,7 +385,7 @@ export const portfolio = [
         desc: 'Laravel, mySql',
       },
       {
-        title: 'Preview : ',
+        title: 'Repository : ',
         desc: 'https://github.com/LohanaO/ProyectoPadel',
       },
     ],
@@ -401,27 +394,28 @@ export const portfolio = [
   {
     id: 6,
     img: Work6,
-    title: 'Photo Editing',
+    title: 'Crm-Clients',
+    web:'https://github.com/LohanaO/Crm-react',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Photo',
+        desc: 'Crm-Clients',
       },
       {
         icon: <FiUser />,
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'Udemy',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Photoshop',
+        desc: 'React js- react router dom, json server',
       },
       {
         icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dibble.com',
+        title: 'Repository : ',
+        desc: 'https://github.com/LohanaO/Crm-react',
       },
     ],
   },

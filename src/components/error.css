@@ -1,0 +1,17 @@
+
+.alert{
+    background-color: #c5170b;;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.succes{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
