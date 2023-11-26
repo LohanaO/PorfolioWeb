@@ -142,8 +142,8 @@ export const personalInfo = [
 
   {
     id: 4,
-    no: 'Skill',
-    title: 'Teamwork, Scrum',
+    no: 'Competencies',
+    title: 'Teamwork <br/> Scrum Methodology <br/> Communication <br/> Use of trello <br/> Use of design tools  ',
   },
 ];
 

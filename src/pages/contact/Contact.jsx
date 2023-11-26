@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './contact.css';
-import { FaEnvelopeOpen, FaPhoneSquareAlt, FaFacebookF, FaTwitter, FaYoutube, FaDribbble }
+import { FaEnvelopeOpen, FaPhoneSquareAlt, FaFacebookF, 
+  FaLinkedin, FaGithub }
   from 'react-icons/fa';
 import { FiSend } from 'react-icons/fi';
 import Error from '../../components/Error';
@@ -19,19 +20,29 @@ const Contact = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState(false);
-  const [isEmailSent, setIsEmailSent] = useState(false); 
-  // Variable de estado para controlar si el correo se envió correctamente
+  const [messageError, setMessageError] = useState("");
+  const [isEmailSent, setIsEmailSent] = useState(false);
 
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
   const handleSubmit = (event) => {
     event.preventDefault();
 
     // Validate form fields
     if ([name, email, subject, message].includes("")) {
-      console.log('Please fill in all fields');
+
       setError(true);
+      setMessageError("All fields are required");
       return;
     }
-  
+    if (!validateEmail(email)) {
+      setError(true);
+      setMessageError("Invalid email");
+      return;
+    }
     emailjs.send(
       'service_s9oqb4y',
       'formulario_contacto',
@@ -56,28 +67,29 @@ const Contact = () => {
 
         setTimeout(() => {
           setIsEmailSent(false);
-        },1500);
+        }, 1500);
 
       })
       .catch((error) => {
         console.error('Email failed to send:', error);
       });
 
-      
+
   }
 
   return (
     <section className='contact section'>
-   
+
       <h2 className='section__title'>
         Get In  <span>Touch</span></h2>
-       
-      <div className='contact__container container grid'>
-      
-        <div className='contact__data'>
-          <h3 className='contact__title'>Don't by Shy !</h3>
 
-          <p className='contact__description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante eget mi gravida consectetur sed vitae libero. Nulla ultricies lectus sed dolor eleifend, id aliquam justo rutrum. Nulla facilisi. Fusce tincidunt, sapien nec consectetur placerat, odio velit eleifend
+      <div className='contact__container container grid'>
+
+        <div className='contact__data'>
+          <h3 className='contact__title'>Contact Form !</h3>
+
+          <p className='contact__description'>
+            If you need to contact me you can send a message.
           </p>
 
           <div className='contact__info'>
@@ -107,17 +119,17 @@ const Contact = () => {
           <div className='contact__socials'>
             <a href="https://www.facebook.com/lohap/" className='contact__social-link'><FaFacebookF /></a>
 
-            <a href="https://www.facebook.com/lohap/" className='contact__social-link'><FaTwitter /></a>
+            <a href="https://www.linkedin.com/in/lohana-orellano-81b242246/" className='contact__social-link'><FaLinkedin /></a>
 
-            <a href="https://youtube.com/" className='contact__social-link'><FaYoutube /></a>
+            <a href="https://github.com/LohanaO" className='contact__social-link'><FaGithub /></a>
 
-            <a href="https://www.facebook.com/lohap/" className='contact__social-link'><FaDribbble /></a>
+           
           </div>
         </div>
 
         <form className='contact__form'>
           {error &&
-            <Error mensaje="All fields are required" />
+            <Error mensaje={messageError} />
           }
           <div className='form__input-group'>
             <div className='form__input-div'>
@@ -162,7 +174,7 @@ const Contact = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
-             {isEmailSent && <p className='succes'>El correo se envio corretamente</p>}
+            {isEmailSent && <p className='succes'>Email sent successfully</p>}
           </div>
           <button
             type='submit'
